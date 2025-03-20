@@ -8,3 +8,46 @@ html,body{
     height: 100%;
     background-color: #cccccc;
 }
+.card{
+    width: 268px; ;
+   height: 474px; ;
+   background-color: #ffffff; 
+}
+
+.img-card{
+    width: 265px; 
+    height: 350px;
+    margin-top: 50px; 
+}
+.descricao{
+    font-size:  14px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 5px ;
+}
+.preco{
+    font-size: 25;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ff6500;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+.pagamento{
+    color: #666666;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 5px;
+    font-size: 11px;
+}
+.button-card{
+    background-color: #ff6500;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
