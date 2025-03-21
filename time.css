@@ -47,7 +47,23 @@ html,body{
     font-size: 15px;
     text-align: center;
 }
-
-
+.menu{
+    background-color: #4194cc48;
+    color: #ffffff;
+    border: 1px solid;
+    display:flex ;
+}
+.item-menu{
+    list-style: none;
+    padding: 10px 20px; 
+}
+.item-menu:hover{
+    background-color: #999999;
+}
+.link-menu{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
 
 
