@@ -6,7 +6,7 @@ body {
     padding: 20px;
     color: #333;
 }
-.titulo {
+h1 {
     text-align: center;
     color: #007bff;
     font-size: 28px;
