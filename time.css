@@ -1,5 +1,5 @@
 div {
-    border:1px solid #ff0000 ;
+    border:1px solid #ffffff ;
 }
 
 html,body{
@@ -8,10 +8,22 @@ html,body{
     height: 100%;
     background-color: #cccccc;
 }
+header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ff6500;
+
+}
 .card{
     width: 268px; ;
    height: 474px; ;
    background-color: #ffffff; 
+   margin: 10px 5px;
+}
+.img-principal{
+    width: 100px; 
+    height: 100px;
+    margin-top: 50px; 
 }
 
 .img-card{
@@ -24,6 +36,7 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 10px 5px ;
+    color: #000000;
 }
 .preco{
     font-size: 25;
@@ -46,9 +59,13 @@ html,body{
     height: 25px;
     font-size: 15px;
     text-align: center;
+    border: 0;
+} 
+.botao-comprar{
+    padding: 10px 5px;
 }
 .menu{
-    background-color: #4194cc48;
+    background-color: #ff6500;
     color: #ffffff;
     border: 1px solid;
     display:flex ;
@@ -65,5 +82,8 @@ html,body{
     color: #ffffff;
     font-weight: bold;
 }
-
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
