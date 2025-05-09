@@ -1,13 +1,62 @@
 <script>
-    
-    
-   // var altura = 50
-    //var largura = 80
-    //var area = altura * largura
-    //var idade = prompt("Digite a sua idade")
-    //alert(idade)
-    var number1 = parseInt(prompt ("Digite 1 numeros"))
-    var number2 = parseInt(prompt ("Digite mais 1 numeros"))
-    var resultado = number1 + number2
-    alert(resultado) 
+    /* alert("oi sala de aula")            /*Mostra a mensagem na tela*/
+     /*var texto = "Oi galera"             /*Declarção de variavel tipo texto*/
+    /* var nome = "davi"                   /*Declarção de variavel tipo texto*/
+     /*var number = 10                     /*Declaração de variavel tipo numero*/
+    /* var altura = 1.60                   /*Declaração de variavel tipo real*/
+     /*var trabalha = true                 /*Declaração de variavel tipo real*/
+     /*prompt("Digite o que voce quiser")  /*Abre um espaço pro usuario digitar*/
+     /*alert(nome)                         /*Chama a variavel selecionada*/
+     
+     
+    // function Cliquebotao(){
+      //   MostrarAlerta(somar(prompt('digite o primeiro numero'), prompt('digite o segundo numero') ) )
+     //}
+     //function MostrarAlerta(texto)
+     //{
+       //  alert(texto)
+     //}
+     //function somar (num1, num2)
+     //{
+       //      var soma= Number(num1)+Number(num2)
+         //    return soma 
+     //}
+ 
+     //MostrarAlerta("hello world!!!!")
+     //MostrarAlerta(prompt("digite algo"))
+     
+ </script>
+<input type="text" value="davi" name = "nome" id= "entrada" />
+ <br />
+
+ <button id="botao" onclick="TrocarTexto()">
+    Evento Clique
+ </button>
+
+<script>
+
+function TrocarTexto(){
+
+var entrada = document.getElementById("entrada")
+entrada.value = "kkkkkkkkkkk"
+var botao = document.getElementById("botao")
+
+if (botao.style.backgroundColor == "red")
+
+ {
+
+    botao.style.backgroundColor = "green"
+
+ }
+
+else
+
+{
+    botao.style.backgroundColor = "red"
+
+}
+
+
+}
+
 </script>

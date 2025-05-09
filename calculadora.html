@@ -1,0 +1,56 @@
+<input type="text" name="num1" id="numero1" >
+<br/>
+<input type="text" name="num2" id="numero2" >
+<br/>
+<button id="botao " onclick="Somar()">
+    +
+</button>
+<button id="botao " onclick="Subtrair()">
+    -
+</button>
+
+<button id="botao " onclick="Multiplicação()">
+    X
+</button>
+<button id="botao " onclick="divisão()">
+    /
+</button>
+<script>
+    function Somar()
+    {
+        var  numero1 = document.getElementById("numero1")
+        var  numero2 = document.getElementById("numero2")
+        alert(Number(numero1.value ) + Number( numero2.value) )
+
+    }
+
+    function Subtrair()
+    {
+        var  numero1 = document.getElementById("numero1")
+        var  numero2 = document.getElementById("numero2")
+        alert(Number(numero1.value ) - Number(numero2.value) )
+
+    }
+
+    function Multiplicação()
+    {
+        var  numero1 = document.getElementById("numero1")
+        var  numero2 = document.getElementById("numero2")
+        alert( Number(numero1.value ) * Number( numero2.value) )
+
+    }
+    function divisão()
+    {
+        var  numero1 = document.getElementById("numero1")
+        var  numero2 = document.getElementById("numero2")
+        alert( Number(numero1.value ) / Number( numero2.value) )
+
+    }
+</script>
+
+<br/>
+<br/>
+
+  
+
+
