@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+</head>
+<body>
+    <input id="texto" name="text" type="text"/>
+    <button onclick="adicionarImagem()">Adicionar</button>
+    <ul id="listaImagens">
+        
+    </ul>
+    <script>
+        function adicionarImagem()
+        {
+            var lista = document.getElementById('listaImagens')
+            var texto = document.getElementById('texto')
+            var item = document.createElement("li")
+            var img = document.createElement("img")
+            img.src = texto.value
+            img.whdth = 150
+            img.height = 75
+            item.append(img)
+            lista.append(item)
+
+            item.innerText = texto.value 
+            lista.append(item)
+            
+        }
+    </script>
+</body>
+</html>
