@@ -28,6 +28,40 @@
             lista.append(item)
             
         }
+
+        var nomes = [
+                    "Davi",
+                    "Neymar",
+                    "Mattos",
+                    "Eloah",
+                    "Matheus",
+                    "Maicon",
+                    "Sergio",
+                    "Rodolfo",
+                    "Luiza",
+                    "Fabiana",
+                    "Eduardo",
+                    "Otavio",
+                    "Erick",
+                    "Ivan",
+                    "Ivo",
+                    "Thomas",
+                    "Richarlison",
+                ]
+        //alert(nomes.length + " - " +
+        //nomes[0]+ " - " +
+        //nomes[1]+ " - " +
+        //nomes[2]+ " - " +
+        //nomes [numeroAleatorio(3)]//
+
+        for (var i = 0; i< nomes.length; i++)
+        {
+            document.write("<br/>"+ nomes[i])
+        }
+        function numeroAleatorio(numeroMaximo)
+        {
+            return Math.floor(Math.random() * numeroMaximo)
+        }
     </script>
 </body>
 </html>
