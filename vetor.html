@@ -19,7 +19,7 @@
             var item = document.createElement("li")
             var img = document.createElement("img")
             img.src = texto.value
-            img.whdth = 150
+            img.width = 150
             img.height = 75
             item.append(img)
             lista.append(item)
@@ -62,6 +62,46 @@
         {
             return Math.floor(Math.random() * numeroMaximo)
         }
+
+
+
+        exibirLista(nomes)
+        nomes.reverse(); //INverte a ordem dos elementos
+        exibirLista(nomes)
+        nomes.shift(); // Remove o primeiro elemento
+        exibirLista(nomes) 
+        nomes.unshift("Novo nome no inicio da lista"); //adiciona o 0 no começo
+        exibirLista(nomes)
+        nomes.pop(); //remove o ultimo elemento
+        exibirLista(nomes)
+        nomes.push( "Neymar no final da lista" ); //adiciona 4 elementos no final
+        exibirLista(nomes)
+
+        //novo modelo de for
+
+        nomes.forEach(
+            (valor, indice) =>{
+             document.write("indice"+indice+"Valor é :"+valor+"<br/>")
+            }
+        );
+
+        nomes.reverse(); //INverte a ordem dos elementos
+        document.write("<hr>")
+
+        nomes.forEach(
+            (valor, indice)=> {
+                document.write("indice"+indice+"Valor é :"+valor+"<br/>")
+            }
+        );
+            function exibirLista(lista)
+            {
+               lista.forEach(
+                (valor, indice)=>{
+                document.write("indice"+indice+"Valor é :"+valor+"<br/>")
+            })
+        }
+
+
     </script>
 </body>
 </html>
