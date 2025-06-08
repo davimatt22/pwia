@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lista (JavaScript - Console)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        p {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Lista (JavaScript - Verifique o Console)</h1>
+    <p>Os resultados de cada exercício foram enviados para o <strong>console do navegador</strong>.</p>
+    <p>Para vê-los:</p>
+    <ol>
+        <li>Clique com o botão direito em qualquer lugar da página.</li>
+        <li>Selecione "Inspecionar" ou "Inspecionar Elemento".</li>
+        <li>Vá para a aba "Console" nas Ferramentas do Desenvolvedor que se abrirão.</li>
+    </ol>
+
+    <script>
+        console.log("--- Início dos Exercícios de Lista em JavaScript ---");
+
+        // 1. Crie uma lista chamado cores com 3 nomes de cores e exiba no console.
+        let cores = ["vermelho", "azul", "verde"];
+        console.log("1. Cores iniciais:", cores);
+
+        // 2. Adicione a cor "amarelo" ao final da lista cores.
+        cores.push("amarelo");
+        console.log("2. Cores após adicionar 'amarelo':", cores);
+
+        // 3. Remova a última cor da lista cores.
+        cores.pop();
+        console.log("3. Cores após remover a última cor:", cores);
+
+        // 4. Adicione "preto" no começo da lista.
+        cores.unshift("preto");
+        console.log("4. Cores após adicionar 'preto' no início:", cores);
+
+        // 5. Remova o primeiro item da lista cores.
+        cores.shift();
+        console.log("5. Cores após remover o primeiro item:", cores);
+
+        // 6. Inverta a ordem dos elementos da lista cores.
+        cores.reverse();
+        console.log("6. Cores após inverter a ordem:", cores);
+
+        // 7. Crie uma lista de números [1, 2, 3]. Adicione 4 ao final, depois 0 no início, e inverta a lista.
+        let numeros = [1, 2, 3];
+        console.log("7. Números iniciais:", numeros);
+        numeros.push(4);
+        console.log("   Números após adicionar 4:", numeros);
+        numeros.unshift(0);
+        console.log("   Números após adicionar 0:", numeros);
+        numeros.reverse();
+        console.log("   Números após inverter:", numeros);
+
+        // 8. Crie uma lista tarefas = []. Adicione 3 tarefas com push. Remova a última tarefa com pop.
+        let tarefas = [];
+        console.log("8. Tarefas iniciais:", tarefas);
+        tarefas.push("Comprar pão");
+        tarefas.push("Estudar JavaScript");
+        tarefas.push("Fazer exercício");
+        console.log("   Tarefas após adicionar 3:", tarefas);
+        tarefas.pop();
+        console.log("   Tarefas após remover a última:", tarefas);
+
+        // 9. Crie uma lista de nomes com 2 elementos. Use unshift para adicionar
+        //    mais 2 nomes no início e depois remova um do fim.
+        let nomes = ["Alice", "Bob"];
+        console.log("9. Nomes iniciais:", nomes);
+        nomes.unshift("Charlie");
+        nomes.unshift("David");
+        console.log("   Nomes após adicionar 2 no início:", nomes);
+        nomes.pop();
+        console.log("   Nomes após remover um do fim:", nomes);
+
+        // 10. Crie uma lista vazia. Use push e unshift para adicionar os números de 1 a
+        //     5 de forma que a lista final fique [5, 4, 3, 2, 1].
+        let minhaLista = [];
+        console.log("10. Lista vazia inicial:", minhaLista);
+        minhaLista.push(1);
+        minhaLista.push(2);
+        minhaLista.unshift(3);
+        minhaLista.unshift(4);
+        minhaLista.unshift(5);
+        console.log("    Lista após adições:", minhaLista);
+
+        // 11. Crie uma lista de 1 a 75. Em seguida remova os números até 25. Essa
+        //     lista deve ter o índice 0 (lista[0]) igual a 26.
+        let listaCompleta = [];
+        for (let i = 1; i <= 75; i++) {
+            listaCompleta.push(i);
+        }
+        console.log("11. Lista de 1 a 75 (início e fim):", listaCompleta.slice(0, 5), "...", listaCompleta.slice(-5));
+
+        let listaReduzida = listaCompleta.slice(25);
+        console.log("    Lista após remover até 25 (início e fim):", listaReduzida.slice(0, 5), "...", listaReduzida.slice(-5));
+        console.log("    listaReduzida[0] (deve ser 26):", listaReduzida[0]);
+
+        console.log("--- Fim dos Exercícios de Lista em JavaScript ---");
+    </script>
+</body>
+</html>
