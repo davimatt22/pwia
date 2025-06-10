@@ -12,6 +12,48 @@ body{
     background: linear-gradient(to bottom, #FF0000, #ffffff);
     min-height: 100vh;
 }
+.texto {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b4cca; /* azul Pokémon */
+    margin-top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px #ffcb05; /* sombra amarela para destacar */
+  }
+  
+header {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  header figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #ffcb05; /* cor amarela Pokémon */
+    border-radius: 15px;
+    background: #3b4cca; /* azul escuro Pokémon */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  header img.img-principal {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  header figcaption {
+    background-color: #ffcb05;
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 12px 12px;
+    user-select: none;
+  }
 
 main{
     display: inline-block;
@@ -39,7 +81,7 @@ main{
     font-weight: 550;
     color: #aaa;
     position: absolute;
-    top: 54.5%;
+    top: 58.5%;
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(8px, 5vw, 25px);
@@ -49,7 +91,7 @@ main{
 .pokemon__name {
     color: #3a444d;
     text-transform: capitalize;
-    font-size: clamp(12px, 2.5vw, 18px);
+    font-size: clamp(12px, 2.5vw, 20px);
     font-weight: 500;
 }
 
